@@ -1,2 +1,5 @@
 install:
-	@poetry install
+	poetry install
+
+test:
+	poetry run brain-games
