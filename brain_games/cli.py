@@ -1,10 +1,10 @@
 import prompt
 
 
-def welcome_user(x):
-    name = prompt.string("Mai I have your name? ")
+def welcome_user():
+    name = prompt.string("May I have your name? ")
+    print("hello ")
 
 
 
 
-welcome_user(x)
