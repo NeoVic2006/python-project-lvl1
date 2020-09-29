@@ -16,6 +16,8 @@ jobs:
       # Checks out a copy of your repository on the ubuntu-latest machine
       - name: Checkout code
         uses: actions/checkout@v2
+        
+      - name: TESTING SERGEY      
         run: make lint
 
       # Runs the Super-Linter action
