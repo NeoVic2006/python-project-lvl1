@@ -21,4 +21,8 @@ jobs:
           python-version: ${{ matrix.python-version }}
         # make depends on poetry
       - name: Install dependencies
-        run: dir
+        run: |
+          pip install poetry
+
+      - name: TESTING SERGEY      
+        run: make lint
