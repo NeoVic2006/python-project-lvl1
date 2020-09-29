@@ -13,12 +13,20 @@ jobs:
     runs-on: windows-latest
 
     steps:
+
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v1
+        with:
+          python-version: 3.8
+      - uses: Gr1N/setup-poetry@v3
+      - run: poetry --version
+
       # Checks out a copy of your repository on the ubuntu-latest machine
       - name: Checkout code
         uses: actions/checkout@v2
         
       - name: TESTING SERGEY      
-        run: make lint C:\Python_Work_for_Hexlet\python-project-lvl1/
+        run: make lint 
 
       # Runs the Super-Linter action
       - name: Run Super-Linter
