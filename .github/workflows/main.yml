@@ -28,6 +28,3 @@ jobs:
         run: |
           make check
 
-      - name: TESTING SERGEY      
-        uses: C:\Python_Work_for_Hexlet\python-project-lvl1
-        run: make lint
