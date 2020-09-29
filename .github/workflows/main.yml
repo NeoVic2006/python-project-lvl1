@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@v2
         
       - name: TESTING SERGEY      
-        run: make lint
+        run: make lint C:\Python_Work_for_Hexlet\python-project-lvl1/
 
       # Runs the Super-Linter action
       - name: Run Super-Linter
