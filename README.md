@@ -3,6 +3,6 @@
 
 <a href="https://codeclimate.com/github/codeclimate/codeclimate/test_coverage"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage" /></a>
 
-<a href="https://github.com/NeoVic2006/python-project-lvl1/workflows/main/badge.svg" /></a> 
+<a href="https://github.com/NeoVic2006/python-project-lvl1/workflows/main/badge.svg"><img src="https://github.com/NeoVic2006/python-project-lvl1/workflows/main/badge.svg" /></a>
 
 
