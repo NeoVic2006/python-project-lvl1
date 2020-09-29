@@ -25,5 +25,4 @@ jobs:
           pip install poetry
           make install
       - name: TESTING SERGEY      
-        uses: C:\Python_Work_for_Hexlet\python-project-lvl1
         run: make lint
