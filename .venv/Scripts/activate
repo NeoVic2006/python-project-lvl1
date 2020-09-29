@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Python Work for Hexlet\python-project-lvl1\.venv"
+VIRTUAL_ENV="C:\Python_Work_for_Hexlet\python-project-lvl1\.venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

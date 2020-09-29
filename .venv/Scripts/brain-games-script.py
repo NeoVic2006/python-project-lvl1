@@ -1,4 +1,4 @@
-#!"c:\python work for hexlet\python-project-lvl1\.venv\scripts\python.exe"
+#!c:\python_work_for_hexlet\python-project-lvl1\.venv\scripts\python.exe
 # EASY-INSTALL-ENTRY-SCRIPT: 'neovic2006-brain-games','console_scripts','brain-games'
 __requires__ = 'neovic2006-brain-games'
 import re

@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Python Work for Hexlet\python-project-lvl1\.venv
+set VIRTUAL_ENV=C:\Python_Work_for_Hexlet\python-project-lvl1\.venv
 
 if not defined PROMPT set PROMPT=$P$G
 
