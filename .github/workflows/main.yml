@@ -23,5 +23,5 @@ jobs:
       - name: Install dependencies
         run: |
           pip install poetry
-          make install
+          choco install make
 
