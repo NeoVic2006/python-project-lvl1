@@ -23,6 +23,6 @@ jobs:
       - name: Install dependencies
         run: |
           pip install poetry
-          choco install make
-          make lint 
+
+
 

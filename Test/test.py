@@ -1,7 +1,9 @@
+from random import *
  
  
+one = randint(0, 100)
+print(one)
  
- 
-test  = 'ABRAKADABRA'
-print(test[6:1:-1])
 
+
+print("Question: " + str(randint(0, 100)) + " + " + str(randint(0, 100)))
