@@ -3,4 +3,6 @@
 
 <a href="https://github.com/NeoVic2006/python-project-lvl1/workflows/main/badge.svg"><img src="https://github.com/NeoVic2006/python-project-lvl1/workflows/main/badge.svg" /></a>
 
+<a href="https://asciinema.org/a/PC0cFNvfiJ0ITBHYiyaFHGzyu"><img src="https://asciinema.org/a/PC0cFNvfiJ0ITBHYiyaFHGzyu" /></a>
+
 
