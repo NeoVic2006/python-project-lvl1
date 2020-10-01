@@ -3,6 +3,6 @@
 
 <a href="https://github.com/NeoVic2006/python-project-lvl1/workflows/main/badge.svg"><img src="https://github.com/NeoVic2006/python-project-lvl1/workflows/main/badge.svg" /></a>
 
-<a href="https://asciinema.org/a/PC0cFNvfiJ0ITBHYiyaFHGzyu"><img src="https://asciinema.org/a/14?t=25&speed=2&theme=solarized-dark" /></a>
+<a href="https://asciinema.org/a/PC0cFNvfiJ0ITBHYiyaFHGzyu"><a href="https://asciinema.org/a/14"><img src="https://asciinema.org/a/14.png" width="836"/></a>
 
 
