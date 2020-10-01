@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "NeoVic2006_brain_games"
-version = "0.2.1"
-description = "Updated with ubuntu VENV"
+version = "0.3.0"
+description = "Updated with Progression game"
 authors = ["Sergey Vengilevskiy <NeoVic2006@gmail.com>"]
 packages = [
   { include = "brain_games" },
