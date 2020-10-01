@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "NeoVic2006_brain_games"
-version = "0.2.0"
-description = "Updated with Calculator game"
+version = "0.2.1"
+description = "Updated with ubuntu VENV"
 authors = ["Sergey Vengilevskiy <NeoVic2006@gmail.com>"]
 packages = [
   { include = "brain_games" },
@@ -19,6 +19,7 @@ flake8 = "^3.8.3"
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
 brain-calc = "brain_games.scripts.brain-calc:main"
+brain-prog = "brain_games.scripts.brain_prog:main"
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
