@@ -1,4 +1,3 @@
-import random
 from random import randint
 import prompt
 
@@ -11,7 +10,7 @@ def calculation():
     ran_two = randint(1, 40)
     print("Question: " + str(ran_one) + " " + str(ran_two))
     ans = prompt.string('Your answer: ')
-    
+
     while ran_one != ran_two:
         if ran_one > ran_two:
             ran_one -= ran_two
@@ -37,4 +36,3 @@ def nod_calculation():
             print("Let's try again, " + name + "!")
         count -= 1
     print("Congratulations, " + name + "!")
-

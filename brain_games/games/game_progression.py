@@ -1,14 +1,13 @@
-import random
 from random import randint
 import prompt
 
 
-# Calculcation function which create random Ints, printing cleaned List and return: 
-# ans <- user answer, 
-# memor_elem <- element which was hidden 
+# Calc function which create random Ints, printing cleaned List and return:
+# ans <- user answer,
+# memor_elem <- element which was hidden
 def calculations_for_prog():
     list_of_num = []
-    random_num= randint(1, 100)
+    random_num = randint(1, 100)
     step = randint(1, 5)
     find_element = randint(0, 9)
 
@@ -24,7 +23,7 @@ def calculations_for_prog():
     return ans, memor_elem
 
 
-#main function where ans and memor_elem are compared and show results
+# main function where ans and memor_elem are compared and show results
 def progression():
     count = 3
     print("Welcome to the Brain Games!")
@@ -37,8 +36,7 @@ def progression():
         if int(ans) == memor_elem:
             print("Correct")
         else:
-            print(ans + " is wrong answer. Correct answer was " + str(memor_elem))
+            print(ans + " is wrong answer. Correct answer: " + str(memor_elem))
             print("Let's try again, " + name + "!")
         count -= 1
     print("Congratulations, " + name + "!")
-
