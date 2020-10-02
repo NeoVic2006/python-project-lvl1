@@ -4,7 +4,8 @@ from brain_games.scripts.add_functions import greetings
 
 def main():
     greetings()
-    calc_for_nod()
+    for x in range(3):
+        calc_for_nod()
 
 if __name__ == '__main__':
     main()
