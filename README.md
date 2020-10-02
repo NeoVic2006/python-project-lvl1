@@ -11,4 +11,7 @@ Second update 0.3.0 Added game Progression
 <a href="https://asciinema.org/a/39kEBAxYyccFK52BzZkQFAf01" target="_blank"><img src="https://asciinema.org/a/PC0cFNvfiJ0ITBHYiyaFHGzyu.svg" /></a>
 Third update 0.4.0 Added NOD algorithm:
 <a href="https://asciinema.org/a/wnVusGfLuBubm8jJyQ3i1qIfe" target="_blank"><img src="https://asciinema.org/a/PC0cFNvfiJ0ITBHYiyaFHGzyu.svg" /></a>
+Fourth update 0.5.0 Added Fermat algorithm:
+<a href="https://asciinema.org/a/wrbnYyLgfXSPOvw2006qGRGbP" target="_blank"><img src="https://asciinema.org/a/PC0cFNvfiJ0ITBHYiyaFHGzyu.svg" /></a>
+
 
