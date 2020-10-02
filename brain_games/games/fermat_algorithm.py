@@ -7,8 +7,8 @@ def fermat_alg():
     name = greetings()
     print("Answer <yes> if given number is prime. Otherwise answer <no>.")
     for x in range(3):
-        ans, result = checking_answers()
-        fermat_calculations(ans, result)
+        ans, result = fermat_calculations()
+        checking_answers(ans, result)
     print("Congratulations, " + name + "!")
 
 
@@ -32,14 +32,8 @@ def fermat_calculations():
 
 
 def checking_answers(ans, result):
-    if ans == "yes":
-        if result == 0:
-            print("Correct")
-        else:
-            print("Wrong answer. This number is Not Prime")
+    if (result == 0 and ans == "yes") or (result > 0 and ans == "no"):
+        print("Correct")
     else:
-        if result == 0:
-            print("Wrong answer. This number is Prime")
-        else:
-            print("Correct")
-
+        print("Wrong answer.")
+    
