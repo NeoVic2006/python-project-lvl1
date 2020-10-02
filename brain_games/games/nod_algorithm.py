@@ -1,6 +1,7 @@
 from random import randint
 import prompt
-from brain_games.scripts.greetings import greetings
+from brain_games.scripts.add_functions import greetings, comparing_results
+
 
 # Function to create 2 random Ints and calculate NOD between them.
 # and <- User answer
@@ -21,14 +22,9 @@ def calculation():
 
 # Main function which comparing data from Calculation function and print result
 def nod_calculation():
-    name_nod = greetings()
+    name = greetings()
     print("Find the greatest common divisor of given numbers.")
     for x in range(3):
-        ans, ran_one = calculation()
-        if int(ans) == ran_one:
-            print("Correct")
-        else:
-            print(ans + " is wrong answer. Correct answer was " + str(ran_one))
-            print("Let's try again, " + name_nod + "!")
- 
-    print("Congratulations, " + name_nod + "!")
+        ans, res = calculation()
+        comparing_results(ans, res)
+    print("Congratulations, " + name + "!")

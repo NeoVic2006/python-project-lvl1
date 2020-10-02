@@ -2,7 +2,8 @@ import prompt
 import operator
 import random
 from random import randint
-from brain_games.scripts.greetings import greetings
+from brain_games.scripts.add_functions import greetings, comparing_results
+
 
 # Function to make all calculation and return 2 parameters
 def calculations():
@@ -21,13 +22,9 @@ def calculations():
 
 # Main function to check and print result
 def calculator():
-    name_calc = greetings()
+    name = greetings()
     print("What is the result of the expression?")
     for x in range(3):
         ans, res = calculations()
-        if int(ans) == res:
-            print("Correct")
-        else:
-            print(ans + " is wrong answer. Correct answer was " + str(res))
-            print("Let's try again, " + name_calc + "!")
-    print("Congratulations, " + name_calc + "!")
+        comparing_results(ans, res)
+    print("Congratulations, " + name + "!")

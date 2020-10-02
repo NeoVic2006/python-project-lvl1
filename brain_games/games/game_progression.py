@@ -1,6 +1,6 @@
 from random import randint
 import prompt
-from brain_games.scripts.greetings import greetings
+from brain_games.scripts.add_functions import greetings, comparing_results
 
 
 # Calc function which create random Ints, printing cleaned List and return:
@@ -26,13 +26,9 @@ def calculations_for_prog():
 
 # main function where ans and memor_elem are compared and show results
 def progression():
-    name_prog = greetings()
+    name = greetings()
     print("What number is missing in the progression?")
     for x in range(3):
-        ans, memor_elem = calculations_for_prog()
-        if int(ans) == memor_elem:
-            print("Correct")
-        else:
-            print(ans + " is wrong answer. Correct answer: " + str(memor_elem))
-            print("Let's try again, " + name_prog + "!")
-    print("Congratulations, " + name_prog + "!")
+        ans, res = calculations_for_prog()
+        comparing_results(ans, res)
+    print("Congratulations, " + name + "!")

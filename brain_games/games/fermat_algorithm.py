@@ -1,6 +1,7 @@
 import prompt
 from random import randint
-from brain_games.scripts.greetings import greetings
+from brain_games.scripts.add_functions import greetings
+
 
 # Function to print text and check results from fermat_calculations funcion
 def fermat_alg():
@@ -36,4 +37,3 @@ def checking_answers(ans, result):
         print("Correct")
     else:
         print("Wrong answer.")
-    
