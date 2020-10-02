@@ -22,7 +22,8 @@ jobs:
         # make depends on poetry
       - name: Install dependencies
         run: |
-          pip install poetry
+          pip3 install poetry
+          pip3 install make
         
 
 

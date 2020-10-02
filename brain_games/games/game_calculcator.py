@@ -21,15 +21,13 @@ def calculations():
 
 # Main function to check and print result
 def calculator():
-    name = greetings()
+    name_calc = greetings()
     print("What is the result of the expression?")
-
     for x in range(3):
         ans, res = calculations()
         if int(ans) == res:
             print("Correct")
         else:
             print(ans + " is wrong answer. Correct answer was " + str(res))
-            print("Let's try again, " + name + "!")
-
-    print("Congratulations, " + name + "!")
+            print("Let's try again, " + name_calc + "!")
+    print("Congratulations, " + name_calc + "!")
