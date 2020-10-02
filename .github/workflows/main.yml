@@ -24,7 +24,9 @@ jobs:
         run: |
           pip3 install poetry
           pip3 install make
-          poetry run flake8 brain_games
+        test: 
+          make lint
+          
         
 
 

@@ -1,6 +1,6 @@
 from random import randint
 import prompt
-from brain_games.scripts.add_functions import greetings, comparing_results
+from brain_games.scripts.add_functions import comparing_results
 
 
 # Calc function which create random Ints, printing cleaned List and return:
@@ -16,7 +16,7 @@ def progression():
 
         for x in range(10):
             random_num = random_num + step
-            list_of_num.append(random_num)
+            list_of_num.append(random_num)\
 
         memor_elem = list_of_num[find_element]
         list_of_num[find_element] = ".."
@@ -24,4 +24,3 @@ def progression():
         print("Question: " + list_of_num.replace(',', ''))
         ans = prompt.string('Your answer: ')
         comparing_results(ans, memor_elem)
-     
