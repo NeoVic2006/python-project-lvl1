@@ -4,9 +4,9 @@ from brain_games.scripts.greetings import greetings
 
 # Function to print text and check results from fermat_calculations funcion
 def fermat_alg():
-    count = 3
     name = greetings()
     print("Answer <yes> if given number is prime. Otherwise answer <no>.")
+    count = 3
     while count != 0:
         ans, result = fermat_calculations()
         if ans == "yes":

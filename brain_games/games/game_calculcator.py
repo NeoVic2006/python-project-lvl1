@@ -21,8 +21,8 @@ def calculations():
 
 # Main function to check and print result
 def calculator():
-    count = 3
     name = greetings()
+    count = 3
     print("What is the result of the expression?")
 
     while count != 0:

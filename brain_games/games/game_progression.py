@@ -26,9 +26,9 @@ def calculations_for_prog():
 
 # main function where ans and memor_elem are compared and show results
 def progression():
-    count = 3
     name = greetings()
     print("What number is missing in the progression?")
+    count = 3
     while count != 0:
         ans, memor_elem = calculations_for_prog()
         if int(ans) == memor_elem:
