@@ -6,7 +6,7 @@ from brain_games.scripts.add_functions import greetings, comparing_results
 # Calc function which create random Ints, printing cleaned List and return:
 # ans <- user answer,
 # memor_elem <- element which was hidden
-def preogression():
+def progression():
     print("What number is missing in the progression?")
     for x in range(3):
         list_of_num = []
