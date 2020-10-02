@@ -6,7 +6,7 @@ from brain_games.scripts.add_functions import greetings, comparing_results
 # Function to create 2 random Ints and calculate NOD between them.
 # and <- User answer
 # ran_one <- its a result from NOD calculation between 2 random numbers
-def calculation():
+def calc_for_nod():
     ran_one = randint(1, 50)
     ran_two = randint(1, 40)
     print("Question: " + str(ran_one) + " " + str(ran_two))
@@ -22,9 +22,9 @@ def calculation():
 
 # Main function which comparing data from Calculation function and print result
 def nod_calculation():
-    name = greetings()
+    name_nod = greetings()
     print("Find the greatest common divisor of given numbers.")
     for x in range(3):
-        ans, res = calculation()
+        ans, res = calc_for_nod()
         comparing_results(ans, res)
-    print("Congratulations, " + name + "!")
+    print("Congratulations, " + name_nod + "!")

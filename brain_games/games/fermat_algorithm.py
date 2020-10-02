@@ -5,18 +5,18 @@ from brain_games.scripts.add_functions import greetings
 
 # Function to print text and check results from fermat_calculations funcion
 def fermat_alg():
-    name = greetings()
+    name_ferm = greetings()
     print("Answer <yes> if given number is prime. Otherwise answer <no>.")
     for x in range(3):
-        ans, result = fermat_calculations()
+        ans, result = fermat_calc()
         checking_answers(ans, result)
-    print("Congratulations, " + name + "!")
+    print("Congratulations, " + name_ferm + "!")
 
 
 # Function to create random number and make 3 Fermat test to check "prime"
 # return ans <- User answer
 # return result <- test results
-def fermat_calculations():
+def fermat_calc():
     random_num = randint(3, 1000)
     rand_test_one = randint(2, random_num - 1)
     rand_test_two = randint(2, random_num - 1)
