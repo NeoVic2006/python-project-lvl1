@@ -1,6 +1,6 @@
 install:
 		@poetry install
 
-lint:
+test:
 		poetry run flake8 brain_games
 
