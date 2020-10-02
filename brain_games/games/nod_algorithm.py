@@ -17,7 +17,7 @@ def calc_for_nod():
         while ran_one != ran_two:
             if ran_one > ran_two:
                 ran_one -= ran_two
-            elif ran_two > ran_one:
+            else:
                 ran_two -= ran_one
         comparing_results(ans, ran_one)
     

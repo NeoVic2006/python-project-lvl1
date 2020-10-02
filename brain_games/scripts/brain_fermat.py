@@ -3,7 +3,7 @@ from brain_games.scripts.add_functions import greetings
 
 
 def main():
-    name = greetings()
+    greetings()
     fermat_calc()
 
 if __name__ == '__main__':
