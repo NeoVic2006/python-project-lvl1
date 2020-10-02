@@ -6,20 +6,7 @@ from brain_games.scripts.greetings import greetings
 def fermat_alg():
     name = greetings()
     print("Answer <yes> if given number is prime. Otherwise answer <no>.")
-    count = 3
-    while count != 0:
-        ans, result = fermat_calculations()
-        if ans == "yes":
-            if result == 0:
-                print("Correct")
-            else:
-                print("Wrong answer. This number is Not Prime")
-        else:
-            if result == 0:
-                print("Wrong answer. This number is Prime")
-            else:
-                print("Correct")
-        count -= 1
+    checking_answers()
     print("Congratulations, " + name + "!")
 
 
@@ -41,3 +28,20 @@ def fermat_calculations():
     ans = prompt.string('Your answer: ')
 
     return ans, result
+
+def checking_answers():
+    count = 3
+    while count != 0:
+        ans, result = fermat_calculations()
+        if ans == "yes":
+            if result == 0:
+                print("Correct")
+            else:
+                print("Wrong answer. This number is Not Prime")
+        else:
+            if result == 0:
+                print("Wrong answer. This number is Prime")
+            else:
+                print("Correct")
+        count -= 1
+    
