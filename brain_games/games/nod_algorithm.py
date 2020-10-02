@@ -21,16 +21,15 @@ def calculation():
 
 # Main function which comparing data from Calculation function and print result
 def nod_calculation():
-    count = 3
     name = greetings()
     print("Find the greatest common divisor of given numbers.")
 
-    while count != 0:
+    for x in range(3):
         ans, ran_one = calculation()
         if int(ans) == ran_one:
             print("Correct")
         else:
             print(ans + " is wrong answer. Correct answer was " + str(ran_one))
             print("Let's try again, " + name + "!")
-        count -= 1
+ 
     print("Congratulations, " + name + "!")

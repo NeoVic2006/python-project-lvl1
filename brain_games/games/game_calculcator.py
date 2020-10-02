@@ -22,15 +22,14 @@ def calculations():
 # Main function to check and print result
 def calculator():
     name = greetings()
-    count = 3
     print("What is the result of the expression?")
 
-    while count != 0:
+    for x in range(3):
         ans, res = calculations()
         if int(ans) == res:
             print("Correct")
         else:
             print(ans + " is wrong answer. Correct answer was " + str(res))
             print("Let's try again, " + name + "!")
-        count -= 1
+
     print("Congratulations, " + name + "!")

@@ -28,13 +28,11 @@ def calculations_for_prog():
 def progression():
     name = greetings()
     print("What number is missing in the progression?")
-    count = 3
-    while count != 0:
+    for x in range(3):
         ans, memor_elem = calculations_for_prog()
         if int(ans) == memor_elem:
             print("Correct")
         else:
             print(ans + " is wrong answer. Correct answer: " + str(memor_elem))
             print("Let's try again, " + name + "!")
-        count -= 1
     print("Congratulations, " + name + "!")
