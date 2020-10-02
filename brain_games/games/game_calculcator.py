@@ -2,7 +2,7 @@ import prompt
 import operator
 import random
 from random import randint
-
+from brain_games.scripts.greetings import greetings
 
 # Function to make all calculation and return 2 parameters
 def calculations():
@@ -22,9 +22,7 @@ def calculations():
 # Main function to check and print result
 def calculator():
     count = 3
-    print("Welcome to the Brain Games!")
-    name = prompt.string('May I have your name? ')
-    print("Hello, " + name + "!")
+    name = greetings()
     print("What is the result of the expression?")
 
     while count != 0:

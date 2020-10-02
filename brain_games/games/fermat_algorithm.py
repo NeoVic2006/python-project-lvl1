@@ -1,13 +1,11 @@
 import prompt
 from random import randint
-
+from brain_games.scripts.greetings import greetings
 
 # Function to print text and check results from fermat_calculations funcion
 def fermat_alg():
     count = 3
-    print("Welcome to the Brain Games!")
-    name = prompt.string('May I have your name? ')
-    print("Hello, " + name + "!")
+    name = greetings()
     print("Answer <yes> if given number is prime. Otherwise answer <no>.")
     while count != 0:
         ans, result = fermat_calculations()
