@@ -24,6 +24,7 @@ jobs:
         run: |
           pip3 install poetry
           pip3 install make
+      - name: Testing
         test: 
           make lint
           
