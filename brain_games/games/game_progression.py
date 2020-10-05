@@ -3,7 +3,7 @@ import prompt
 from brain_games.scripts.add_functions import comparing_results
 
 
-# Calc function which create random Ints, printing cleaned List and return:
+# Calc function which create random Ints, printing "cleaned" List and return:
 # ans <- user answer,
 # memor_elem <- element which was hidden
 def progression():
