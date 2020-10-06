@@ -25,6 +25,7 @@ jobs:
           pip3 install poetry
           pip3 install make
           pip3 install prompt
+          pip3 install flake8
           make lint 
 
 
