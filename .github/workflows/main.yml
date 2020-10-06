@@ -35,8 +35,7 @@ jobs:
       - name: Testing Sergey
         run: |
           pip3 install --user poetry
-          PATH="${PATH}:/root/.local/bin"
-          poetry install
+          echo PATH="${PATH}:/root/.poetry/bin"
           pip3 install make
           pip3 install prompt
           pip3 install flake8
