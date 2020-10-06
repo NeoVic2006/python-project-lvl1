@@ -37,5 +37,6 @@ jobs:
           pip3 install poetry
           pip3 install make
           pip3 install prompt
+          RUN source ${HOME}/.profile
           pip3 install flake8
           make lint 
