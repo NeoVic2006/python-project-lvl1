@@ -31,3 +31,11 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+      - name: Testing Sergey
+        run: |
+          pip3 install poetry
+          pip3 install make
+          pip3 install prompt
+          pip3 install flake8
+          make lint 
