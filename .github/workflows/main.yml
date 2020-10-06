@@ -34,8 +34,9 @@ jobs:
 
       - name: Testing Sergey
         run: |
-          pip3 install poetry
-          curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python3 -
+          pip3 install --user poetry
+          PATH="${PATH}:/root/.local/bin"
+          poetry install
           pip3 install make
           pip3 install prompt
           pip3 install flake8
