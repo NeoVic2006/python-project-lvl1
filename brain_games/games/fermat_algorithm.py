@@ -2,6 +2,10 @@ import prompt
 from random import randint
 
 
+
+
+
+
 # Function to create random number and make 3 Fermat test to check "prime"
 # return ans <- User answer
 # return result <- test results
