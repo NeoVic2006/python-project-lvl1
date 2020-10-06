@@ -1,6 +1,6 @@
 Install instructions: 
 
-run this command:  pip3 install -i https://test.pypi.org/simple/ neovic2006-brain-games 
+pip3 install -i https://test.pypi.org/simple/ neovic2006-brain-games 
 
 =======
 ### Hexlet tests and linter status:
