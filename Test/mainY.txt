@@ -28,12 +28,3 @@ jobs:
           pip3 install flake8
           
           make lint 
-
-
-          
-
-          
-        
-
-
-
