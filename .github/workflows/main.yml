@@ -1,5 +1,5 @@
   
-name: Python CI
+name: CI
 
 on:
     - push
@@ -13,16 +13,15 @@ jobs:
                 python-version: [3.8]
         steps:
             - uses: actions/checkout@v2
-            - name: Set up Python ${{ matrix.python-version }}
+            - name: Python ${{ matrix.python-version }} installation
               uses: actions/setup-python@v2
               with:
                 python-version: ${{ matrix.python-version }}
-            # make depends on poetry
-            - name: Install dependencies
+            - name: Dependencies check
               run: |
                 pip install poetry
                 make install
-            - name: Run linter and pytest
+            - name: Lint command
               run: |
                 make lint
 

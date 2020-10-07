@@ -1,20 +1,18 @@
 from random import randint
-import prompt
-from brain_games.scripts.add_functions import comparing_results
+
+question = "Find the greatest common divisor of given numbers."
 
 
 # Function to create 2 random Ints and calculate NOD between them.
-# and <- User answer
-# ran_one <- its a result from NOD calculation between 2 random numbers
-def calc_for_nod():
-    ran_one = randint(1, 50)
-    ran_two = randint(1, 40)
-    print("Question: " + str(ran_one) + " " + str(ran_two))
-    ans = prompt.string('Your answer: ')
+# random_one <- its a result from NOD calculation between 2 random numbers
+def get_game_calculations():
+    random_one = randint(1, 50)
+    random_two = randint(1, 40)
+    print("Question: " + str(random_one) + " " + str(random_two))
 
-    while ran_one != ran_two:
-        if ran_one > ran_two:
-            ran_one -= ran_two
+    while random_one != random_two:
+        if random_one > random_two:
+            random_one -= random_two
         else:
-            ran_two -= ran_one
-    comparing_results(ans, ran_one)
+            random_two -= random_one
+    return random_one
