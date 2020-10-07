@@ -40,18 +40,6 @@ jobs:
           poetry config virtualenvs.in-project false
           poetry config cache-dir ~/.poetry
           poetry config virtualenvs.path ~/.poetry/venv
-      - name: Cache poetry venv
-        uses: actions/cache@v2
-        id: poetry-cache
-        with:
-          # path: ~/.cache/pypoetry
-          path: ~/.poetry
-          key: ${{ runner.os }}-poetry-${{ hashFiles('**/poetry.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-poetry-
-      - name: Install Dependencies
-        if: steps.poetry-cache.outputs.cache-hit != 'true'
-        run: poetry install -vv
 
       - name: Show poetry env info
         run: |
