@@ -39,6 +39,3 @@ jobs:
         run: |
           poetry env info
           poetry config --list
-      - name: Test poetry run
-        run: |
-          poetry run pip list
