@@ -39,3 +39,4 @@ jobs:
         run: |
           poetry env info
           poetry config --list
+          make lint
