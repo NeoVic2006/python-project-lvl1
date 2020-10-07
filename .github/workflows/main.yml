@@ -35,12 +35,6 @@ jobs:
       - name: Install poetry
         uses: dschep/install-poetry-action@v1.3
 
-      - name: Configure poetry
-        run: |
-          poetry config virtualenvs.in-project false
-          poetry config cache-dir ~/.poetry
-          poetry config virtualenvs.path ~/.poetry/venv
-
       - name: Show poetry env info
         run: |
           poetry env info
