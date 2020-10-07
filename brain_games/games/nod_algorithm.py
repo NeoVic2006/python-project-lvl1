@@ -3,8 +3,6 @@ import prompt
 from brain_games.scripts.add_functions import comparing_results
 
 
-
-
 # Function to create 2 random Ints and calculate NOD between them.
 # and <- User answer
 # ran_one <- its a result from NOD calculation between 2 random numbers
