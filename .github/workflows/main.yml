@@ -25,12 +25,13 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: ${{ matrix.python-version }}
-          
+
       - name: Install poetry
         uses: dschep/install-poetry-action@v1.3
 
       - name: Show poetry env info
         run: |
-          poetry env info
+          poetry update
+          poetry env list
           poetry config --list
           make lint
