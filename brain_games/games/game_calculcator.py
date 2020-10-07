@@ -5,6 +5,8 @@ from random import randint
 from brain_games.scripts.add_functions import comparing_results
 
 
+
+
 # Function to make all calculation and return 2 parameters
 def calculator():
     print("What is the result of the expression?")
