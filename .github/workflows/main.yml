@@ -35,4 +35,8 @@ jobs:
       - name: Testing Sergey
         run: |
           install poetry
+          poetry config virtualenvs.create true
+          poetry config virtualenvs.in-project false
+          poetry config cache-dir ~/.poetry
+          poetry config virtualenvs.path ~/.poetry/venv
           make lint 
