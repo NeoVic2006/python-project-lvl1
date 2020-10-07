@@ -20,8 +20,9 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - name: Set up Python 3.8
       - uses: actions/checkout@master
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v2
         with:
           python-version: 3.8
 
@@ -30,3 +31,6 @@ jobs:
 
       - name: Make command
         run: make lint
+
+
+          
