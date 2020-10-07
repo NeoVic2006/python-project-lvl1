@@ -22,16 +22,11 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@master
       - name: Set up Python 3.8
-        uses: actions/setup-python@v2
         with:
           python-version: 3.8
 
       - name: Install poetry
         uses: dschep/install-poetry-action@v1.3
 
-      - name: Show poetry env info
-        run: |
-          poetry config virtualenvs.create true
-          pip install -U pip
-          pip install poetry
-          make lint
+      - name: Make command
+        run: make lint
