@@ -33,7 +33,7 @@ jobs:
           echo test, and deploy your project.
 
       - name: Install poetry
-      uses: dschep/install-poetry-action@v1.3
+        uses: dschep/install-poetry-action@v1.3
 
       - name: Configure poetry
         run: |
