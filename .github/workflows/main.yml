@@ -31,7 +31,4 @@ jobs:
 
       - name: Show poetry env info
         run: |
-          poetry update
-          poetry env list
-          poetry config --list
           make lint
