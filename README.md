@@ -20,5 +20,7 @@ Third update 0.4.0 Added NOD algorithm:
 Fourth update 0.5.0 Added Fermat algorithm:
 <a href="https://asciinema.org/a/wrbnYyLgfXSPOvw2006qGRGbP" target="_blank"><img src="https://asciinema.org/a/PC0cFNvfiJ0ITBHYiyaFHGzyu.svg" /></a>
 
+Fifth update 0.6.2 Added Parity game:
+<a href="https://asciinema.org/a/uk9d1IEOjZB4ws8hGQTalPyXf" target="_blank"><img src="https://asciinema.org/a/PC0cFNvfiJ0ITBHYiyaFHGzyu.svg" /></a>
 
 
