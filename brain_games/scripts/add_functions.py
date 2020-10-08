@@ -1,6 +1,8 @@
 import prompt
 
 
+NUMBER_OF_ROUNDS = 3
+
 # Main function to Welcome user,
 # ask question and request function to Compare results
 def game_launch(game):
@@ -14,7 +16,7 @@ def game_launch(game):
 # Function receiveing username and calculation function from proper game.
 # comparing user and calculation function results and print it
 def comparing_results(calc_function, user_name):
-    for x in range(3):
+    for _ in range(NUMBER_OF_ROUNDS):
         correct_answer = calc_function()
         user_answer = prompt.string('Your answer: ')
         if user_answer != correct_answer:

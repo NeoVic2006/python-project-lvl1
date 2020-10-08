@@ -13,7 +13,7 @@ def get_game_calculations():
     step = randint(1, 5)
     element_to_hide = randint(0, 9)
 
-    for x in range(10):
+    for _ in range(10):
         random_number += step
         list_of_num.append(random_number)
 
