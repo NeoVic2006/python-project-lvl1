@@ -1,23 +1,22 @@
 from random import randint
 
-question = "Answer yes if given number is prime. Otherwise answer no."
+DESCRIPTION = "Answer yes if given number is prime. Otherwise answer no."
+RANDOM_NUMB_START = 3
+RANDOM_NUMB_END = 1000
 
 
 # Function to create random number and make 3 Fermat test to check "prime"
 # return yes or no, depends if random number is prime
 def get_game_calculations():
-    random_num = randint(3, 1000)
-    r_test_one = randint(2, random_num - 1)
-    r_test_two = randint(2, random_num - 1)
-    r_test_three = randint(2, random_num - 1)
-
+    random_num = randint(RANDOM_NUMB_START, RANDOM_NUMB_END)
+    r_test_one = randint(RANDOM_NUMB_START, random_num - 1)
+    r_test_two = randint(RANDOM_NUMB_START, random_num - 1)
+    r_test_three = randint(RANDOM_NUMB_START, random_num - 1)
     # Fermat primality test
     result = ((((r_test_one**random_num) - r_test_one) % random_num) +
               (((r_test_two**random_num) - r_test_two) % random_num) +
               (((r_test_three**random_num) - r_test_three) % random_num))
-    print("Is this number prime: " + str(random_num))
-
     if result == 0:
-        return "yes"
+        return "yes", random_num
     else:
-        return "no"
+        return "no", random_num

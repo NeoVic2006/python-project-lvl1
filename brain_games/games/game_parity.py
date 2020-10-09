@@ -1,15 +1,16 @@
 from random import randint
 
-question = "Answer yes if the number is even, otherwise answer no."
+DESCRIPTION = "Answer yes if the number is even, otherwise answer no."
+RANDOM_NUMB_START = 1
+RANDOM_NUMB_END = 1000
 
 
 # Function to create random number and calculate if this number == parity
 # return yes or no
 def get_game_calculations():
-    random_num = randint(1, 1000)
+    random_num = randint(RANDOM_NUMB_START, RANDOM_NUMB_END)
     result = random_num % 2
-    print("Question: " + str(random_num))
     if result == 0:
-        return "yes"
+        return "yes", random_num
     else:
-        return "no"
+        return "no", random_num

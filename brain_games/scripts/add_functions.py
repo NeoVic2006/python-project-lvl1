@@ -9,8 +9,8 @@ NUMBER_OF_ROUNDS = 3
 def game_launch(game):
     print("Welcome to the Brain Games!")
     user_name = prompt.string('May I have your name? ')
-    print("Hello, " + user_name + "!")
-    print(game.question)
+    print("Hello, {}!".format(user_name))
+    print(game.DESCRIPTION)
     comparing_results(game.get_game_calculations, user_name)
 
 
@@ -18,12 +18,13 @@ def game_launch(game):
 # comparing user and calculation function results and print it
 def comparing_results(calc_function, user_name):
     for _ in range(NUMBER_OF_ROUNDS):
-        correct_answer = calc_function()
+        correct_answer, question = calc_function()
+        print("Question: {}" .format(question))
         user_answer = prompt.string('Your answer: ')
         if user_answer != correct_answer:
-            print(user_answer + " is wrong answer. Correct answer was "
-                  + str(correct_answer))
-            print("Let's try again, " + user_name)
+            print("{} is wrong answer. Correct answer was {}"
+                  .format(user_answer, correct_answer))
+            print("Let's try again, {}".format(user_name))
         else:
             print("Correct")
-    print("Congratulations, " + user_name + "!")
+    print("Congratulations, {}!".format(user_name))
