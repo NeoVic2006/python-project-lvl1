@@ -8,7 +8,7 @@ RANDOM_NUMB_END = 100
 
 
 # Function creating random parameters and calculate them.
-# Return result of calculation
+# Return result of calculation and question info 
 def get_game_calculations():
     first_number = randint(RANDOM_NUMB_START, RANDOM_NUMB_END)
     second_number = randint(RANDOM_NUMB_START, RANDOM_NUMB_END)
