@@ -12,18 +12,17 @@ packages = [
 [tool.poetry.dependencies]
 python = "^3.8"
 prompt = "^0.4.1"
-make = "^0.1.6"
-flake8 = "^3.8.4"
 
 [tool.poetry.dev-dependencies]
+flake8 = "^3.8.4"
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
-brain-calc = "brain_games.scripts.brain_games:start_calculator_game"
-brain-prog = "brain_games.scripts.brain_games:start_progression_game"
-brain-nod = "brain_games.scripts.brain_games:start_NOD_algorithm"
-brain-fermat = "brain_games.scripts.brain_games:start_fermat_algorithm"
-brain-parity = "brain_games.scripts.brain_games:start_parity_game"
+brain-calc = "brain_games.scripts.calculator_script:start_calculator_game"
+brain-prog = "brain_games.scripts.progression_script:start_progression_game"
+brain-nod = "brain_games.scripts.NOD_algorithm_script:start_NOD_algorithm"
+brain-fermat = "brain_games.scripts.fermat_algorithm_script:start_fermat_algorithm"
+brain-parity = "brain_games.scripts.parity_script:start_parity_game"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
