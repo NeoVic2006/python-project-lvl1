@@ -12,11 +12,14 @@ def get_game_calculations():
     r_test_one = randint(RANDOM_NUMB_START, random_num - 1)
     r_test_two = randint(RANDOM_NUMB_START, random_num - 1)
     r_test_three = randint(RANDOM_NUMB_START, random_num - 1)
-    return fermat_search(random_num, r_test_one, r_test_two, r_test_three), random_num
+    return fermat_search(random_num,
+                         r_test_one,
+                         r_test_two,
+                         r_test_three), random_num
 
 
 # Fermat primality test
-def fermat_search(random_num, r_test_one, r_test_two, r_test_three):    
+def fermat_search(random_num, r_test_one, r_test_two, r_test_three):
     result = ((((r_test_one**random_num) - r_test_one) % random_num) +
               (((r_test_two**random_num) - r_test_two) % random_num) +
               (((r_test_three**random_num) - r_test_three) % random_num))

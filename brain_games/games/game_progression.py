@@ -16,8 +16,8 @@ def get_game_calculations():
     random_number = randint(RANDOM_NUMB_START, RANDOM_NUMB_END)
     step = randint(RANDOM_STEP_START, RANDOM_STEP_END)
     element_to_hide = randint(HIDE_ELEM_START, HIDE_ELEM_END)
-    elem_to_find, question = generate_list_hide_element(random_number, 
-                                                        step, 
+    elem_to_find, question = generate_list_hide_element(random_number,
+                                                        step,
                                                         element_to_hide)
     return elem_to_find, question
 
