@@ -12,5 +12,4 @@ def get_game_calculations():
     result = random_num % 2
     if result == 0:
         return "yes", random_num
-    else:
-        return "no", random_num
+    return "no", random_num

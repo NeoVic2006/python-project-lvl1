@@ -12,6 +12,7 @@ def get_game_calculations():
     r_test_one = randint(RANDOM_NUMB_START, random_num - 1)
     r_test_two = randint(RANDOM_NUMB_START, random_num - 1)
     r_test_three = randint(RANDOM_NUMB_START, random_num - 1)
+    
     # Fermat primality test
     result = ((((r_test_one**random_num) - r_test_one) % random_num) +
               (((r_test_two**random_num) - r_test_two) % random_num) +
