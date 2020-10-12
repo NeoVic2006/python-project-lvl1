@@ -10,7 +10,7 @@ RANDOM_NUMB_END = 50
 def get_game_calculations():
     random_one = randint(RANDOM_NUMB_START, RANDOM_NUMB_END)
     random_two = randint(RANDOM_NUMB_START, RANDOM_NUMB_END)
-    question = str(random_one) + " " + str(random_two)
+    question = "{} {}".format(random_one, random_two)
     return search_NOD(random_one, random_two), question
 
 

@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "NeoVic2006_brain_games"
-version = "0.8.0"
-description = "Updated after second review"
+version = "0.9.0"
+description = "Updated after third review"
 authors = ["Sergey Vengilevskiy <NeoVic2006@gmail.com>"]
 repository = "https://github.com/NeoVic2006/python-project-lvl1"
 packages = [
@@ -18,11 +18,11 @@ flake8 = "^3.8.4"
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
-brain-calc = "brain_games.scripts.calculator_script:start_calculator_game"
-brain-prog = "brain_games.scripts.progression_script:start_progression_game"
-brain-nod = "brain_games.scripts.NOD_algorithm_script:start_NOD_algorithm"
-brain-fermat = "brain_games.scripts.fermat_algorithm_script:start_fermat_algorithm"
-brain-parity = "brain_games.scripts.parity_script:start_parity_game"
+brain-calc = "brain_games.scripts.calculator_script:main"
+brain-prog = "brain_games.scripts.progression_script:main"
+brain-nod = "brain_games.scripts.NOD_algorithm_script:main"
+brain-fermat = "brain_games.scripts.fermat_algorithm_script:main"
+brain-parity = "brain_games.scripts.parity_script:main"
 
 
 [build-system]

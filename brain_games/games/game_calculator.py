@@ -16,6 +16,6 @@ def get_game_calculations():
                  '-': operator.sub,
                  '*': operator.mul}
     op_keys = random.choice(list(operators.keys()))
-    question = str(first_number) + str(op_keys) + str(second_number)
+    question = "{}{}{}".format(first_number, op_keys, second_number)
     result = operators.get(op_keys)(first_number, second_number)
     return str(result), question
