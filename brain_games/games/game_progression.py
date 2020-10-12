@@ -21,7 +21,7 @@ def generating_list():
     random_number = randint(RANDOM_NUMB_START, RANDOM_NUMB_END)
     step = randint(RANDOM_STEP_START, RANDOM_STEP_END)
     new_list = []
-    elem_in_list = random_number 
+    elem_in_list = random_number
     for _ in range(10):
         elem_in_list += step
         new_list.append(elem_in_list)

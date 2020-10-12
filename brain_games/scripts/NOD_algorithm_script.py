@@ -3,8 +3,7 @@ from brain_games.scripts.add_functions import game_launch
 
 
 def main():
-   game_launch(NOD_algorithm)
-
+    game_launch(NOD_algorithm)
 
 
 if __name__ == '__main__':
