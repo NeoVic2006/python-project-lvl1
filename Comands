@@ -1,0 +1,108 @@
+
+
+1) Скопировать репозиторий в VS:
+        git clone "html link"
+
+
+
+2) Commit изменения:
+        C:\Python Work for Hexlet\python-project-lvl1>git add .
+        и 
+        C:\Python Work for Hexlet\python-project-lvl1>git commit -m "your commit description"
+        или 
+        git push
+        poetry lock 
+
+3) Добавляем в репозиторий в Pypi
+        poetry build
+        poetry config repositories.test_repo https://test.pypi.org/legacy/
+        poetry publish --repository test_repo
+
+3.5) как добавить в вирт окруж пакет:
+        poetry add
+
+4) Запустить команду с Poetry 
+        poetry run brain-games
+        poetry run flake8 brain_games
+
+5) Устанавливаем Dependences 
+        poetry install
+
+
+6) ! [rejected]        master -> master (fetch first)
+        git fetch origin master
+        git merge origin master
+
+7) Как установить make на VSC:
+
+        CMD:
+        Install chocolatey from https://chocolatey.org/install
+        Then, choco install make.
+
+8) Вообще в любой непонятной ситуации нужно проверять, какой Python сейчас активирован (which python , which pip) 
+и какие пакеты установлены (pip list). При работе с проектом в poetry всегда проверяйте, 
+что сейчас активен именно Python из виртуального окружения poetry (а не /usr/bin/python ) 
+и в нем все нужные пакеты установлены.
+
+
+9)  asciinema rec
+
+
+        pip3 install -i https://test.pypi.org/simple/ neovic2006-brain-games
+
+
+
+10) how to check linux paths 
+
+
+        echo $PATH | tr ":" "\n"
+
+
+11) To add Poetry path 
+
+        export PATH=$PATH:$HOME/.poetry/bin
+
+
+12) After reinstalling ubuntu you need to connect GIt:
+
+         git config --global user.name "dzou"
+         git config --global user.email "dzou@company.com"     
+
+
+13) uninstall Poetry 
+
+        curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | POETRY_UNINSTALL=1 python3
+
+
+14) upgrade all packages in Ubuntu:
+
+        sudo apt update
+        apt list –upgradable
+        sudo apt upgrade
+
+15) remove folder in ubuntu
+
+        sudo rm -R python2.7
+
+
+16) installing Pip3 on ubuntu 
+        sudo apt-get update
+        sudo apt-get -y install python3-pip
+
+
+17) remove folder from git:
+
+        In order for you to remove the folder or file from Github but no from you computer use this command in the following order
+
+        git rm -r --cached name-of-the-folder
+        git commit -m "insert your comment inside this quotation marks"
+        git push origin
+        in case you have several branches you can do
+
+        git push origin master
+        git push origin branchName
+        EXAMPLE
+
+        git rm -r --cached .vscode
+        git commit -m "removed the .vscode folder"
+        git push origin
