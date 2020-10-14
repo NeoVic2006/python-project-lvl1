@@ -1,17 +1,16 @@
 import operator
 import random
-from random import randint
 
 DESCRIPTION = "What is the result of the expression?"
-RANDOM_NUMB_START = 0
-RANDOM_NUMB_END = 100
+RANDOM_NUMB_MIN = 0
+RANDOM_NUMB_MAX = 100
 
 
 # Function creating random parameters and calculate them.
 # Return result of calculation and question info
-def get_game_calculations():
-    first_number = randint(RANDOM_NUMB_START, RANDOM_NUMB_END)
-    second_number = randint(RANDOM_NUMB_START, RANDOM_NUMB_END)
+def get_question_answer():
+    first_number = random.randint(RANDOM_NUMB_MIN, RANDOM_NUMB_MAX)
+    second_number = random.randint(RANDOM_NUMB_MIN, RANDOM_NUMB_MAX)
     operators = {'+': operator.add,
                  '-': operator.sub,
                  '*': operator.mul}
