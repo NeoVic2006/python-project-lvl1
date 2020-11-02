@@ -1,9 +1,9 @@
 from brain_games.games import greatest_common_divisor
-from brain_games.scripts.launcher import launcher
+from brain_games.launcher import launch
 
 
 def main():
-    launcher(greatest_common_divisor)
+    launch(greatest_common_divisor)
 
 
 if __name__ == '__main__':

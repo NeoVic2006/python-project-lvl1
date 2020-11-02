@@ -14,7 +14,7 @@ def get_question_answer():
     operators = {'+': operator.add,
                  '-': operator.sub,
                  '*': operator.mul}
-    op_keys = random.choice(list(operators.keys()))
-    question = "{}{}{}".format(first_number, op_keys, second_number)
-    result = operators.get(op_keys)(first_number, second_number)
+    op_key = random.choice(list(operators.keys()))
+    question = "{}{}{}".format(first_number, op_key, second_number)
+    result = operators.get(op_key)(first_number, second_number)
     return str(result), question

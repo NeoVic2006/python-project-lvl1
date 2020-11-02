@@ -9,7 +9,7 @@ RANDOM_STEP_END = 5
 LIST_LENGTH = 10
 
 
-# Main funcion using 2 functions and returning elem to find and question
+# Main funcion using 2 functions and returning elem to find and ask question
 def get_question_answer():
     elem_to_find, question = gen_question(gen_proression())
     return elem_to_find, question
@@ -19,12 +19,12 @@ def get_question_answer():
 def gen_proression():
     random_number = random.randint(RANDOM_NUMB_MIN, RANDOM_NUMB_MAX)
     step = random.randint(RANDOM_STEP_START, RANDOM_STEP_END)
-    progression_list = []
-    elem_in_list = random_number
+    progression = []
+    beginning_of_list = random_number
     for _ in range(LIST_LENGTH):
-        elem_in_list += step
-        progression_list.append(elem_in_list)
-    return progression_list
+        beginning_of_list += step
+        progression.append(beginning_of_list)
+    return progression
 
 
 # Taking list and hiding elemnt in it. Returning elem and question

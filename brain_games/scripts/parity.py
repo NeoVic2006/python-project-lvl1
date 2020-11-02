@@ -1,9 +1,9 @@
 from brain_games.games import parity_check
-from brain_games.scripts.launcher import launcher
+from brain_games.launcher import launch
 
 
 def main():
-    launcher(parity_check)
+    launch(parity_check)
 
 
 if __name__ == '__main__':

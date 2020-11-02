@@ -1,9 +1,9 @@
 from brain_games.games import calculator
-from brain_games.scripts.launcher import launcher
+from brain_games.launcher import launch
 
 
 def main():
-    launcher(calculator)
+    launch(calculator)
 
 
 if __name__ == '__main__':

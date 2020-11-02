@@ -11,14 +11,14 @@ def get_question_answer():
     random_one = random.randint(RANDOM_NUMB_MIN, RANDOM_NUMB_MAX)
     random_two = random.randint(RANDOM_NUMB_MIN, RANDOM_NUMB_MAX)
     question = "{} {}".format(random_one, random_two)
-    correct_Nod_numb = search_NOD(random_one, random_two)
-    return str(correct_Nod_numb), question
+    correct_GCD_numb = search_GCD(random_one, random_two)
+    return str(correct_GCD_numb), question
 
 
-def search_NOD(numb_one, numb_two):
-    while numb_one != numb_two:
-        if numb_one > numb_two:
-            numb_one -= numb_two
+def search_GCD(number_one, number_two):
+    while number_one != number_two:
+        if number_one > number_two:
+            number_one -= number_two
         else:
-            numb_two -= numb_one
-    return numb_one
+            number_two -= number_one
+    return number_one

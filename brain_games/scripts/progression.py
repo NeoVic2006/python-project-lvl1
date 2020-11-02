@@ -1,9 +1,9 @@
 from brain_games.games import arithmetic_progression
-from brain_games.scripts.launcher import launcher
+from brain_games.launcher import launch
 
 
 def main():
-    launcher(arithmetic_progression)
+    launch(arithmetic_progression)
 
 
 if __name__ == '__main__':

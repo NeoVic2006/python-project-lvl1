@@ -1,9 +1,9 @@
 from brain_games.games import prime_number
-from brain_games.scripts.launcher import launcher
+from brain_games.launcher import launch
 
 
 def main():
-    launcher(prime_number)
+    launch(prime_number)
 
 
 if __name__ == '__main__':
