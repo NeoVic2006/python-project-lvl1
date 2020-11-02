@@ -8,8 +8,7 @@ RANDOM_NUMB_MAX = 1000
 # Function to create random number and return results
 def get_question_answer():
     random_num = random.randint(RANDOM_NUMB_MIN, RANDOM_NUMB_MAX)
-    if random_num % 2 == 0:
-        result = "yes"
-    else:
-        result = "no"
+    result = 'yes' if random_num % 2 == 0 else 'no'
     return result, random_num
+
+
