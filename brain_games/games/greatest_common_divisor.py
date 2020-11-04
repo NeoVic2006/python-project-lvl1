@@ -6,12 +6,12 @@ RANDOM_NUMBER_MAX = 50
 
 
 def get_question_answer():
-    '''Function to create 2 random Ints and question info
-       Returns result of greatest common divisor   '''
-    random_one = random.randint(RANDOM_NUMBER_MIN, RANDOM_NUMBER_MAX)
-    random_two = random.randint(RANDOM_NUMBER_MIN, RANDOM_NUMBER_MAX)
-    question = "{} {}".format(random_one, random_two)
-    correct_GCD_numb = search_GCD(random_one, random_two)
+    """Function to create 2 random Ints and question info
+       Returns result of greatest common divisor   """
+    random_number_one = random.randint(RANDOM_NUMBER_MIN, RANDOM_NUMBER_MAX)
+    random_number_two = random.randint(RANDOM_NUMBER_MIN, RANDOM_NUMBER_MAX)
+    question = "{} {}".format(random_number_one, random_number_two)
+    correct_GCD_numb = search_GCD(random_number_one, random_number_two)
     return str(correct_GCD_numb), question
 
 

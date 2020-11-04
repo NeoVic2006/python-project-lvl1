@@ -5,20 +5,20 @@ NUMBER_OF_ROUNDS = 3
 
 
 def launch(game):
-    '''Main function to Welcome user,
-       ask question and request function to Compare results'''
+    """Main function to Welcome user,
+       ask question and request function to Compare results"""
     print("Welcome to the Brain Games!")
     user_name = prompt.string('May I have your name? ')
     print("Hello, {}!".format(user_name))
     print(game.DESCRIPTION)
-    run_game_cicle(game.get_question_answer, user_name)
+    run_game_loop(game.get_question_answer, user_name)
 
 
-def run_game_cicle(generate_question_answer, user_name):
-    ''' Function receiveing username and calculation function from proper game.
-         comparing user and calculation function results and print it       '''
+def run_game_loop(generate_answer_question, user_name):
+    """Function receiveing username and calculation function from proper game.
+         comparing user and calculation function results and print it      """
     for _ in range(NUMBER_OF_ROUNDS):
-        correct_answer, question = generate_question_answer()
+        correct_answer, question = generate_answer_question()
         print("Question: {}" .format(question))
         user_answer = prompt.string('Your answer: ')
         if user_answer != correct_answer:
