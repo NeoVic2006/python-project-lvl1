@@ -14,11 +14,11 @@ def launch(game):
     run_game_loop(game.get_question_answer, user_name)
 
 
-def run_game_loop(generate_answer_question, user_name):
+def run_game_loop(generate_question_answer, user_name):
     """Function receiveing username and calculation function from proper game.
          comparing user and calculation function results and print it      """
     for _ in range(NUMBER_OF_ROUNDS):
-        correct_answer, question = generate_answer_question()
+        question, correct_answer = generate_question_answer()
         print("Question: {}" .format(question))
         user_answer = prompt.string('Your answer: ')
         if user_answer != correct_answer:

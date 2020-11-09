@@ -12,7 +12,7 @@ def get_question_answer():
     random_number_two = random.randint(RANDOM_NUMBER_MIN, RANDOM_NUMBER_MAX)
     question = "{} {}".format(random_number_one, random_number_two)
     correct_GCD_numb = search_GCD(random_number_one, random_number_two)
-    return str(correct_GCD_numb), question
+    return question, str(correct_GCD_numb)
 
 
 def search_GCD(number_one, number_two):

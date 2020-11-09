@@ -14,7 +14,7 @@ def get_question_answer():
     operators = {'+': operator.add,
                  '-': operator.sub,
                  '*': operator.mul}
-    op_symbol, op_key = random.choice(list(operators.items()))
-    question = "{}{}{}".format(first_number, op_symbol, second_number)
-    result = op_key(first_number, second_number)
-    return str(result), question
+    math_symbol, math_operator = random.choice(list(operators.items()))
+    question = "{}{}{}".format(first_number, math_symbol, second_number)
+    result = math_operator(first_number, second_number)
+    return question, str(result)
