@@ -12,12 +12,12 @@ def get_question_answer():
     return random_num, answer
 
 
-def is_prime(random_num):
+def is_prime(number):
     """Checking if number is prime or not"""
-    if random_num < 2:
+    if number < 2:
         return False
-    max_divider_possible = random_num // 2
+    max_divider_possible = number // 2
     for divider in range(2, max_divider_possible):
-        if random_num % divider == 0:
+        if number % divider == 0:
             return False
     return True

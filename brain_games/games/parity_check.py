@@ -7,6 +7,6 @@ RANDOM_NUMBER_MAX = 1000
 
 def get_question_answer():
     """Function to create random number and return results"""
-    question_number = random.randint(RANDOM_NUMBER_MIN, RANDOM_NUMBER_MAX)
-    answer = 'yes' if question_number % 2 == 0 else 'no'
-    return question_number, answer
+    question = random.randint(RANDOM_NUMBER_MIN, RANDOM_NUMBER_MAX)
+    answer = 'yes' if question % 2 == 0 else 'no'
+    return question, answer
