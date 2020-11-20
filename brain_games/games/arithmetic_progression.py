@@ -13,8 +13,7 @@ def gen_proression(begining_progression, step, progression_length):
     """Generating new progression list and returning list to main function"""
     progression = []
     for element_number in range(progression_length):
-        element_number = begining_progression + (step*element_number)
-        progression.append(element_number)
+        progression.append(begining_progression + (step*element_number))
     return progression
 
 
@@ -23,9 +22,10 @@ def get_question_answer():
     begining_progression = random.randint(MIN_PROGRESSION_NUMBER,
                                           MAX_PROGRESSION_NUMBER)
     step = random.randint(RANDOM_STEP_MIN, RANDOM_STEP_MAX)
-    progression = gen_proression(begining_progression, step, PROGRESSION_LENGTH)
-    hiding_index = random.randint(0, len(progression) - 1)
-    answer = progression[hiding_index]
-    progression[hiding_index] = ".."
+    progression = gen_proression(begining_progression,
+                                 step, PROGRESSION_LENGTH)
+    hidden_element = random.randint(0, len(progression) - 1)
+    answer = progression[hidden_element]
+    progression[hidden_element] = ".."
     question = " ".join(str(elem) for elem in progression)
     return question, str(answer)

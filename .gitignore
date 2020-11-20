@@ -4,4 +4,3 @@ dist/
 *.pyc
 .venv/
 .test/
-README.md
