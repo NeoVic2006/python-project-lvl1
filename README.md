@@ -1,3 +1,10 @@
+### Hexlet tests and linter status:
+<a href="https://codeclimate.com/github/NeoVic2006/python-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
+
+[![Github Actions Status](https://github.com/NeoVic2006/python-project-lvl1/workflows/CI/badge.svg)](https://github.com/NeoVic2006/python-project-lvl1/actions)
+
+=======
+
 Install instructions: 
 
 pip3 install -i https://test.pypi.org/simple/ neovic2006-brain-games 
@@ -5,10 +12,6 @@ pip3 install -i https://test.pypi.org/simple/ neovic2006-brain-games
 Link for Pypi latest version: https://test.pypi.org/project/neovic2006-brain-games/ 
 
 =======
-### Hexlet tests and linter status:
-<a href="https://codeclimate.com/github/NeoVic2006/python-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
-
-[![Github Actions Status](https://github.com/NeoVic2006/python-project-lvl1/workflows/CI/badge.svg)](https://github.com/NeoVic2006/python-project-lvl1/actions)
 
 First update 0.2.0. Game Calculator:
 <a href="https://asciinema.org/a/PC0cFNvfiJ0ITBHYiyaFHGzyu" target="_blank"><img src="https://asciinema.org/a/PC0cFNvfiJ0ITBHYiyaFHGzyu.svg" /></a>
