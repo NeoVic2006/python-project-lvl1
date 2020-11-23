@@ -7,9 +7,9 @@ RANDOM_NUMBER_MAX = 100
 
 def get_question_answer():
     """Function to create random number and return result(prime or no)"""
-    random_num = random.randint(RANDOM_NUMBER_MIN, RANDOM_NUMBER_MAX)
-    answer = 'yes' if is_prime(random_num) else 'no'
-    return random_num, answer
+    question = random.randint(RANDOM_NUMBER_MIN, RANDOM_NUMBER_MAX)
+    answer = 'yes' if is_prime(question) else 'no'
+    return question, answer
 
 
 def is_prime(number):

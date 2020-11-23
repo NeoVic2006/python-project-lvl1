@@ -24,8 +24,8 @@ def get_question_answer():
     step = random.randint(RANDOM_STEP_MIN, RANDOM_STEP_MAX)
     progression = gen_proression(begining_progression,
                                  step, PROGRESSION_LENGTH)
-    hidden_element = random.randint(0, len(progression) - 1)
-    answer = progression[hidden_element]
-    progression[hidden_element] = ".."
+    hidden_element_index = random.randint(0, len(progression) - 1)
+    answer = progression[hidden_element_index]
+    progression[hidden_element_index] = ".."
     question = " ".join(str(elem) for elem in progression)
     return question, str(answer)
