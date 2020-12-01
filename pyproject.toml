@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "NeoVic2006_brain_games"
-version = "1.0.1"
+version = "1.0.6.7"
 description = "Release with all fixes"
 authors = ["Sergey Vengilevskiy <NeoVic2006@gmail.com>"]
 repository = "https://github.com/NeoVic2006/python-project-lvl1"
@@ -17,12 +17,12 @@ prompt = "^0.4.1"
 flake8 = "^3.8.4"
 
 [tool.poetry.scripts]
-brain-games = "brain_games.scripts.brain-games:main"
-brain-calc = "brain_games.scripts.brain-calc:main"
-brain-prog = "brain_games.scripts.brain-prog:main"
-brain-gcd = "brain_games.scripts.brain-gcd:main"
-brain-prime = "brain_games.scripts.brain-prime:main"
-brain-even = "brain_games.scripts.brain-even:main"
+
+brain-prog = "brain_games.scripts.brain_prog:main"
+brain-gcd = "brain_games.scripts.brain_gcd:main"
+brain-prime = "brain_games.scripts.brain_prime:main"
+brain-even = "brain_games.scripts.brain_even:main"
+brain-calc = "brain_games.scripts.brain_calc:main"
 
 
 [build-system]
