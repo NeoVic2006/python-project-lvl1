@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "NeoVic2006_brain_games"
-version = "1.0.6.7"
+version = "1.0.2"
 description = "Release with all fixes"
 authors = ["Sergey Vengilevskiy <NeoVic2006@gmail.com>"]
 repository = "https://github.com/NeoVic2006/python-project-lvl1"

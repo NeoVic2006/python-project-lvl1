@@ -10,3 +10,5 @@ def get_question_answer():
     question = random.randint(RANDOM_NUMBER_MIN, RANDOM_NUMBER_MAX)
     answer = 'yes' if question % 2 == 0 else 'no'
     return question, answer
+
+

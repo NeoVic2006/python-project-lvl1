@@ -1,6 +1,5 @@
 import prompt
 
-
 NUMBER_OF_ROUNDS = 3
 
 
@@ -16,7 +15,7 @@ def launch(game):
 
 def run_game_loop(generate_question_answer, user_name):
     """Function receiveing username and calculation function from proper game.
-         comparing user and calculation function results and print it      """
+         comparing user and calculation function results and print it  """
     for _ in range(NUMBER_OF_ROUNDS):
         question, correct_answer = generate_question_answer()
         print("Question: {}" .format(question))
